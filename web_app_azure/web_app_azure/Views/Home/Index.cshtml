@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+   @using (Html.BeginForm("Index","Home",FormMethod.Post,new {@enctype = "multipart/form-data"}))
+    {
+        <h1>Select a file!!</h1>
+        <br/>
+        <input type="file" name="f">
+        <br>
+        <br>
+        <h2>Folder name</h2>
+        <input type="text" name="folder">
+        <input type="submit" value="Submit">
+    }
+        
